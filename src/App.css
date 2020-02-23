@@ -12,29 +12,29 @@
     font-size: 40px;
 }
 
-.dark-theme-bg {
+.light-theme-bg {
     background-color: #282c34;
 }
 
-.dark-theme-clr {
+.light-theme-clr {
     color: whitesmoke;
 }
 
-.dark-theme-button {
+.light-theme-button {
     margin-top: 20px;
     color: #282c34;
     background: whitesmoke;
 }
 
-.light-theme-bg {
+.dark-theme-bg {
     background-color: whitesmoke;
 }
 
-.light-theme-clr {
+.dark-theme-clr {
     color: #282c34;
 }
 
-.light-theme-button {
+.dark-theme-button {
     margin-top: 20px;
     color: whitesmoke;
     background: #282c34;
