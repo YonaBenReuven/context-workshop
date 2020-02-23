@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+
+import ClassOne from './ClassOne';
+import ClassTwo from './ClassTwo';
+import Func from './Func';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import createContext;
+// asign it to a constant and export;
+// implement Context.Provider and asign a value;
+
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            theme: "dark",
+            language: "English"
+        }
+    }
+
+    toggleTheme = () => {
+        const theme = this.state.theme === "dark" ? "light" : "dark";
+        this.setState({ theme });
+    }
+
+    toggleTLanguage = () => {
+        const language = this.state.language === "English" ? "Hebrew" : "English";
+        this.setState({ language });
+    }
+
+    render() {
+        return (
+            <div className={`App ${this.state.theme}-theme-bg`}>
+                <ClassOne />
+                <ClassTwo />
+                <Func />
+            </div>
+        );
+    }
 }
 
 export default App;
