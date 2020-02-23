@@ -19,7 +19,7 @@ class AppProvider extends Component {
         this.setState({ theme });
     }
 
-    toggleTLanguage = () => {
+    toggleLanguage = () => {
         const language = this.state.language === "English" ? "Hebrew" : "English";
         this.setState({ language });
     }
