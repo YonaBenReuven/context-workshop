@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // import createContext;
-// asign it to a constant and export;
+// call and asign it to a constant and export;
 // implement Context.Provider and asign a value;
 // wrap the provider around this.props.children;
 

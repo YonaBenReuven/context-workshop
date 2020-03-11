@@ -1,7 +1,7 @@
 import React from 'react';
 
 // implement useContext;
-// on click call toggleTLanguage;
+// on click call toggleLanguage;
 
 const Func = () => {
     return (
